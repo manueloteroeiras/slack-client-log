@@ -1,13 +1,11 @@
 
 
-const slackLogClient = {
+export default {
 
-  sendMessage : async (api, message)=>{
+  sendMessage(api, message){
 
-    return await fetch(`${ api }/send`, { body : message, method: 'POST' })
+    return fetch(`${ api }/send`, { body : message, method: 'POST' })
 
   }
 
 }
-
-export default slackLogClient
