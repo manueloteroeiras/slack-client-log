@@ -1,0 +1,27 @@
+{
+  "name": "slack-log-client",
+  "version": "0.0.2",
+  "description": "Slack log client",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./lib --copy-files",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slack",
+    "log"
+  ],
+  "author": "Manuel Otero",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "color": "^0.11.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.18.0"
+  }
+}
